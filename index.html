@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="converter-body">
+      <div class="converter-title">
+        <h1>Convert Distance</h1>
+        <p>Value to Convert:</p>
+        <small><i>a real number or scientific notation</i> </small>
+      </div>
+      <!--input number-->
+      <div class="conversion">
+        <input type="text" placeholder="input-value" id="input" />
+
+        <!--distance option starts here-->
+        <div class="inputOption">
+          <div>From:</div>
+          <select id="input-type">
+            <!--input options-->
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="miles">miles</option>
+            <option value="centimeter">centimeter</option>
+          </select>
+        </div>
+
+        <div class="outputOption">
+          <div>To:</div>
+          <select id="output-type">
+            <!--output options-->
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="miles">miles</option>
+            <option value="centimeter">centimeter</option>
+          </select>
+        </div>
+      </div>
+      <!--result output-->
+      <div class="converter-operand">
+        <button id="clear-btn">clear</button>
+        <button id="total-btn">calculate</button>
+      </div>
+     
+      <div id="equals"></div>
+      
+    </div>
+  </body>
+</html>
